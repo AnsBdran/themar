@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+body {
+  font-family: 'Cairo', sans-serif;
+  @apply text-text-500 font-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-text-900;
+}
+
+/* html {
+  font-size: 16px;
+  @screen md {
+    font-size: 17px;
+  }
+  @screen lg {
+    font-size: 20px;
+  }
+  @screen xl {
+    font-size: 22px;
+  }
+} */
+.button {
+  @apply transition-all;
+}
+
+a.active {
+  @apply text-primary-main;
+}
+
+/* font sizes */
+
+h1 {
+  @apply text-4xl mb-3;
+}
+
+h2 {
+  @apply text-2xl text-primary-main;
+}
+section {
+  @apply px-3 lg:px-6 xl:px-12;
+}
+
+p {
+  @apply xl:text-lg;
+}
+/* ============================== */
+/* custom classes */
+
+.hero-list-item {
+  /* @apply before:bg-[url(assets/list-icon.svg)] before:absolute before:-right-4 before:bg-no-repeat relative before:h-full before:w-4; */
+  list-style-image: url('/assets/list-icon.svg');
+  /* list-style-position: outside; */
+}
+
+.collapsed-menu {
+  clip-path: polygon(0 0, 100% 0, 93% 0, 0 0);
+}
+
+.shown-menu {
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+}
+
+/* table styles */
+
+.table-container {
+  @apply overflow-auto rounded-bl-lg rounded-br-lg;
+}
+table {
+  @apply w-full rounded-tl-lg rounded-tr-lg;
+}
+td {
+  @apply py-3;
+}
+
+tr:nth-child(even) {
+  @apply bg-primary-light;
+}
+
+table svg {
+  @apply inline-block;
+}
+
+thead {
+  @apply border border-gray-700;
+}
+
+thead th {
+  @apply text-gray-700 font-normal;
+}
+th {
+  @apply py-3;
+}
+
+tbody {
+  @apply divide-y divide-gray-100;
+}
+td {
+  @apply text-text-700 px-4 whitespace-nowrap;
+}
+
+.paid,
+.late,
+.not-paid {
+  @apply flex items-center justify-center;
+}
+
+.paid span {
+  @apply text-greenish-main bg-greenish-light py-1 px-3 rounded-2xl;
+}
+
+.late span {
+  @apply text-yellowish-main bg-yellowish-light py-1 px-3 rounded-2xl;
+}
+
+.not-paid span {
+  @apply text-reddish-main bg-reddish-light py-1 px-3 rounded-2xl;
+}
+
+td a {
+  @apply underline text-primary-main hover:no-underline;
+}
+
+tfoot {
+  @apply bg-primary-main  w-full;
+}
+
+tfoot td {
+  @apply text-white;
+}
+
+/* input:radio */
+
+input[type='radio'] {
+  @apply rounded-full border-2 checked:bg-primary-main border-primary-main appearance-none w-4 h-4 cursor-pointer;
+}
