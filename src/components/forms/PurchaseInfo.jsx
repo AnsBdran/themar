@@ -8,7 +8,9 @@ const PurchaseInfo = () => {
     <section>
       <form action='' className='space-y-12'>
         <div className='space-y-6'>
-          <h2 className='mb-2'>معلومات الشراء</h2>
+          <h2 className='mb-2 relative after:w-36 after:h-[2px] after:bg-primary-main flex items-center gap-2 mt-4 w-max'>
+            معلومات الشراء
+          </h2>
 
           <TextField placeholder='نوع المشتريات' label='نوع المشتريات' />
           <TextField placeholder='اختر الملف' label='عرض السعر' sizeWarn />
@@ -41,7 +43,9 @@ const PurchaseInfo = () => {
           </div>
         </div>
         <div className='space-y-6'>
-          <h2>معلومات المورد</h2>
+          <h2 className='mb-2 relative after:w-36 after:h-[2px] after:bg-primary-main flex items-center gap-2 mt-4 w-max'>
+            معلومات المورد
+          </h2>
           <TextField
             label='اسم المنشأة الموردة'
             placeholder='اسم المنشأة الموردة'
