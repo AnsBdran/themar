@@ -50,14 +50,14 @@ export default Header;
 
 const UserInfo = ({ className }) => (
   <div className={`${className} flex items-center gap-2`}>
-    <div className='rounded-full border p-2 border-primary'>
+    <div className='rounded-full border-2 p-2 border-primary-main bg-primary-light'>
       <User />
     </div>
     <div className='leading-5'>
       <h6>خديجة محمد</h6>
-      <p className='text-text-300'>طالب تمويل</p>
+      <p className='text-text-300 text-sm text-center'>طالب تمويل</p>
     </div>
-    <DownArrow />
+    <DownArrow className='text-text-300 mr-2' />
   </div>
 );
 

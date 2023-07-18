@@ -1,6 +1,7 @@
 import React from 'react';
 import TextField from '../TextField';
 import { DownArrow } from '../../utils/SVGs';
+import { Link } from 'react-router-dom';
 
 const PurchaseInfo = () => {
   return (
@@ -57,10 +58,13 @@ const PurchaseInfo = () => {
             placeholder='اختر الملف'
             sizeWarn
           />
-          <button className='bg-primary-main text-white flex gap-2 mx-auto items-center py-2 px-6 rounded-3xl min-w-[8rem] justify-center hover:text-primary-main hover:bg-transparent hover:border-primary-main border-transparent border'>
+          <Link
+            className='bg-primary-main text-white flex gap-2 mx-auto items-center py-2 px-6 rounded-3xl min-w-[8rem] justify-center hover:text-primary-main hover:bg-transparent hover:border-primary-main border-transparent border w-max'
+            to='step-two'
+          >
             <span>التالي</span>
             <DownArrow className='rotate-90' />
-          </button>
+          </Link>
         </div>
       </form>
     </section>

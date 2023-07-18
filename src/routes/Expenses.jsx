@@ -25,7 +25,7 @@ const Expenses = () => {
           </Link>
         </div>
       </section>
-      <section className='mt-8'>
+      <section className='mt-8 max-w-5xl mx-auto '>
         <div className='bg-notification flex gap-3 py-5 px-4 text-text-700'>
           <UnreadNotification />
           <span>يرجى استكمال الملفات المطلوبة</span>
@@ -36,9 +36,9 @@ const Expenses = () => {
             اضغط هنا
           </a>
         </div>
+        <Table />
+        <ProjectDetails />
       </section>
-      <Table />
-      <ProjectDetails />
     </>
   );
 };

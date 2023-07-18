@@ -1,6 +1,7 @@
 import React from 'react';
 import TextField from '../TextField';
 import { DownArrow } from '../../utils/SVGs';
+import { Link } from 'react-router-dom';
 
 const FinancialInfo = () => {
   return (
@@ -59,14 +60,20 @@ const FinancialInfo = () => {
             </div>
           </div>
           <div className='flex justify-center gap-6'>
-            <button className='flex gap-2 items-center rounded-3xl py-2 px-6 hover:border-primary-main border border-transparent'>
+            <Link
+              className='flex gap-2 items-center rounded-3xl py-2 px-6 hover:border-primary-main border border-transparent'
+              to='/new-project'
+            >
               <DownArrow className='-rotate-90' />
               السابق
-            </button>
-            <button className='flex gap-2 items-center bg-primary-main rounded-3xl py-2 px-6 text-white hover:bg-transparent hover:text-primary-main border border-transparent hover:border-primary-main'>
+            </Link>
+            <Link
+              className='flex gap-2 items-center bg-primary-main rounded-3xl py-2 px-6 text-white hover:bg-transparent hover:text-primary-main border border-transparent hover:border-primary-main'
+              to='/new-project/submit'
+            >
               التالي
               <DownArrow className='rotate-90' />
-            </button>
+            </Link>
           </div>
         </div>
       </form>

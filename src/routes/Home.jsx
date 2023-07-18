@@ -4,7 +4,7 @@ import { CircularListIcon, Cloud } from '../utils/SVGs';
 
 const Home = () => {
   return (
-    <>
+    <div className='max-w-5xl mx-auto '>
       <Hero />
       <section className='mt-8'>
         <p>
@@ -41,7 +41,7 @@ const Home = () => {
           تأكيد طلب ترقية الحساب
         </button>
       </section>
-    </>
+    </div>
   );
 };
 

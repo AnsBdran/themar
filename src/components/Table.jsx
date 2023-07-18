@@ -1,26 +1,32 @@
 import React from 'react';
 import { tableData } from '../utils/_data';
-import { PDF, Upload } from '../utils/SVGs';
+import { DownArrow, PDF, UpDown, Upload } from '../utils/SVGs';
 
 const Table = () => {
   return (
     <section className='mt-8'>
-      <div className='mb-6 flex justify-between'>
-        <h2>جدول سداد الدفعات</h2>
+      <h2>جدول سداد الدفعات</h2>
+      <div className='mb-4 mt-3 flex justify-end'>
         <button className='bg-primary-main text-white px-6 min-w-[6rem] py-2 rounded-3xl'>
           ادفع
         </button>
       </div>
       <div className='table-container'>
-        <table className='table-auto'>
-          <thead>
+        <table className=''>
+          <thead className='border-b border-gray-700'>
             <tr>
-              <th>المبلغ</th>
-              <th>تاريخ السداد</th>
+              <th className='border-gray-700 border-r border-gray-700'>
+                المبلغ
+                <UpDown />
+              </th>
+              <th>
+                تاريخ السداد
+                <UpDown />
+              </th>
 
               <th>المرفقات (الإيصال)</th>
               <th>الفاتورة</th>
-              <th>حالة الدفع</th>
+              <th className='border-l border-gray-700'>حالة الدفع</th>
             </tr>
           </thead>
           <tbody>
@@ -124,11 +130,3 @@ const Table = () => {
 };
 
 export default Table;
-
-// {tableData.map((row) => (
-//   <tr key={row.date}>
-//     {Object.keys(row).map((cell) => (
-//       <td key={cell}>{JSON.stringify(row[cell])}</td>
-//     ))}
-//   </tr>
-// ))}

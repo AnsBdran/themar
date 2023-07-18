@@ -73,10 +73,10 @@ p {
 /* table styles */
 
 .table-container {
-  @apply overflow-auto rounded-bl-lg rounded-br-lg;
+  @apply overflow-auto rounded-lg border-t border-gray-700;
 }
 table {
-  @apply w-full rounded-tl-lg rounded-tr-lg;
+  @apply w-full border-spacing-0 border-separate;
 }
 td {
   @apply py-3;
@@ -91,12 +91,13 @@ table svg {
 }
 
 thead {
-  @apply border border-gray-700;
+  /* @apply; */
 }
 
 thead th {
-  @apply text-gray-700 font-normal;
+  @apply text-gray-700 font-normal  text-center border-b border-gray-700;
 }
+
 th {
   @apply py-3;
 }

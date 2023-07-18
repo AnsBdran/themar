@@ -11,16 +11,18 @@ const Sidebar = ({
   const positionClass = isShown ? 'right-0' : '-right-full ';
   return (
     <aside
-      className={`fixed h-screen z-20 bg-gray-300 top-0 shadow-xl min-w-[300px] ${positionClass} `}
+      className={`fixed z-20 bg-gray-300 top-0 bottom-0 shadow-xl  min-w-[300px] ${positionClass} md:hidden `}
     >
-      <div className='px-2 h-16 flex items-center justify-between'>
-        <Close className='cursor-pointer' onClick={hideMenu} />
-        <HeaderIcons />
+      <div className='px-2'>
+        <div className='px-2 h-16 flex items-center justify-between mb-4'>
+          <Close className='cursor-pointer' onClick={hideMenu} />
+          <HeaderIcons />
+        </div>
       </div>
-      <section className='px-4'>
+      <div className='px-8'>
         <User />
-        {children}
-      </section>
+      </div>
+      {children}
     </aside>
   );
 };
