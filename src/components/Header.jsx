@@ -30,7 +30,7 @@ const Header = () => {
           <Link to='/'>
             <Logo />
           </Link>
-          <UserInfo className='hidden md:flex flex-1 mr-16' />
+          <UserInfo className='hidden md:flex flex-1 lg:mr-56' />
           <HeaderIcons className='hidden md:flex ' />
         </section>
       </header>

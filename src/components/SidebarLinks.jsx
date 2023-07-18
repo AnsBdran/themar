@@ -44,7 +44,7 @@ const SidebarLinks = ({ hideMenu, className }) => {
             className={`font-bold flex gap-2 items-center text-black cursor-pointer `}
             onClick={hideMenu}
           >
-            <LogoSecondary />
+            <img src='assets/ث.png' alt='ث' />
             <span className='text-text-400'>موّل مشترياتك</span>
           </NavLink>
           <LinkWithIcon to='/expenses' title='المشتريات' icon={Cart} />

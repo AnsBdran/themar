@@ -18,9 +18,9 @@ const router = createBrowserRouter(
       <Route element={<Home />} index />
       <Route element={<Expenses />} path='expenses' />
       <Route element={<AddNewProject />} path='new-project'>
-        <Route index element={<PurchaseInfo />} />
+        {/* <Route index element={<PurchaseInfo />} />
         <Route path='step-two' element={<FinancialInfo />} />
-        <Route path='submit' element={<FormSubmitted />} />
+        <Route path='submit' element={<FormSubmitted />} /> */}
       </Route>
     </Route>
   )

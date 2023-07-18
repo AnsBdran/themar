@@ -8,21 +8,23 @@ const Expenses = () => {
   return (
     <>
       <section className='shadow-lg pb-4'>
-        <h1 className='text-primary-main'>المشتريات</h1>
-        <div className='flex flex-col items-center gap-4 sm:flex-row justify-between'>
-          <div className='flex text-primary-main items-center'>
-            <span>المشتريات</span>
-            <DownArrow className='rotate-90' />
-            <span>TMP23001</span>
-            <DownArrow className='rotate-90' />
-            <span className='text-gray-700'>تفاصيل المشروع</span>
+        <div className='max-w-5xl px-3 lg:px-6 xl:px-12 mx-auto'>
+          <h1 className='text-primary-main'>المشتريات</h1>
+          <div className='flex flex-col  items-center gap-4 sm:flex-row justify-between'>
+            <div className='flex text-primary-main items-center'>
+              <span>المشتريات</span>
+              <DownArrow className='rotate-90' />
+              <span>TMP23001</span>
+              <DownArrow className='rotate-90' />
+              <span className='text-gray-700'>تفاصيل المشروع</span>
+            </div>
+            <Link to='/new-project'>
+              <button className='bg-gray-700 text-white items-center rounded-3xl py-2 px-4'>
+                إضافة مشروع جديد
+                <Add className='inline' />
+              </button>
+            </Link>
           </div>
-          <Link to='/new-project'>
-            <button className='bg-gray-700 text-white items-center rounded-3xl py-2 px-4'>
-              إضافة مشروع جديد
-              <Add className='inline' />
-            </button>
-          </Link>
         </div>
       </section>
       <section className='mt-8 max-w-5xl mx-auto '>

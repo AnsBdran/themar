@@ -58,13 +58,13 @@ const PurchaseInfo = () => {
             placeholder='اختر الملف'
             sizeWarn
           />
-          <Link
+          {/* <Link
             className='bg-primary-main text-white flex gap-2 mx-auto items-center py-2 px-6 rounded-3xl min-w-[8rem] justify-center hover:text-primary-main hover:bg-transparent hover:border-primary-main border-transparent border w-max'
             to='step-two'
           >
             <span>التالي</span>
             <DownArrow className='rotate-90' />
-          </Link>
+          </Link> */}
         </div>
       </form>
     </section>

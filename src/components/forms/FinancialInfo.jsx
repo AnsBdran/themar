@@ -60,7 +60,7 @@ const FinancialInfo = () => {
             </div>
           </div>
           <div className='flex justify-center gap-6'>
-            <Link
+            {/* <Link
               className='flex gap-2 items-center rounded-3xl py-2 px-6 hover:border-primary-main border border-transparent'
               to='/new-project'
             >
@@ -73,7 +73,7 @@ const FinancialInfo = () => {
             >
               التالي
               <DownArrow className='rotate-90' />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </form>
