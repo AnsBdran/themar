@@ -37,7 +37,7 @@ const SidebarLinks = ({ hideMenu, className }) => {
 
   return (
     <section className={` h-full ${className}`}>
-      <div className={` px-8 pt-8 text-text-400 `}>
+      <div className={` px-8 pt-8 text-text-400 pb-4`}>
         <nav className='space-y-5 border-b border-text-300 pb-8'>
           <NavLink
             to='paay'
@@ -79,7 +79,7 @@ const SidebarLinks = ({ hideMenu, className }) => {
             <Link>المدونة</Link>
           </div>
         </div>
-        <div className='absolute bottom-8 md:bottom-28 right-8'>
+        <div className=' mt-8'>
           <LinkWithIcon
             to='logout'
             title='تسجيل الخروج'
