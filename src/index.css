@@ -142,5 +142,10 @@ tfoot td {
 /* input:radio */
 
 input[type='radio'] {
-  @apply rounded-full border-2 checked:bg-primary-main border-primary-main appearance-none w-4 h-4 cursor-pointer;
+  /* @apply rounded-full border-2 checked:bg-primary-main border-primary-main appearance-none w-4 h-4 cursor-pointer; */
+  @apply appearance-none rounded-full block checked:bg-primary-main w-2 bg-blue-300 h-2;
+}
+
+.radio-box {
+  @apply border-2 w-4 h-4 border-text-300 rounded-full flex justify-center items-center cursor-pointer p-1;
 }

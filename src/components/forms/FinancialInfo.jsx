@@ -38,11 +38,15 @@ const FinancialInfo = () => {
               <label className='basis-44'>هل تود رهن الأصل؟</label>
 
               <div className='flex gap-1 items-center'>
-                <input type='radio' id='mortgage-yes' name='mortgage' />
+                <div className='radio-box'>
+                  <input type='radio' id='mortgage-yes' name='mortgage' />
+                </div>
                 <label htmlFor='mortgage-yes'>نعم</label>
               </div>
               <div className='flex gap-1 items-center'>
-                <input type='radio' id='mortgage-no' name='mortgage' />
+                <div className='radio-box'>
+                  <input type='radio' id='mortgage-no' name='mortgage' />
+                </div>
                 <label htmlFor='mortgage-no'>لا</label>
               </div>
             </div>
@@ -50,11 +54,15 @@ const FinancialInfo = () => {
               <label className='basis-44 '>هل يوجد ضمانات أخرى؟</label>
 
               <div className='flex gap-1 items-center'>
-                <input type='radio' id='guarantee-yes' name='guarantee' />
+                <div className='radio-box'>
+                  <input type='radio' id='guarantee-yes' name='guarantee' />
+                </div>
                 <label htmlFor='guarantee-yes'>نعم</label>
               </div>
               <div className='flex gap-1 items-center'>
-                <input type='radio' id='guarantee-no' name='guarantee' />
+                <div className='radio-box'>
+                  <input type='radio' id='guarantee-no' name='guarantee' />
+                </div>
                 <label htmlFor='guarantee-no'>لا</label>
               </div>
             </div>

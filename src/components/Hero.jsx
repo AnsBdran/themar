@@ -23,7 +23,7 @@ const Hero = () => {
           <figcaption className='font-bold text-blue-dark '>
             من هو المستثمر المحترف؟
           </figcaption>
-          <blockquote className='pr-4 before:w-[5px] before:bg-indigo before:h-[105%] before:absolute relative before:rounded-xl before:right-0 flex mt-2 items-center border-indigo'>
+          <blockquote className='pr-4 before:w-[5px] before:bg-indigo before:h-[105%] before:absolute relative before:rounded-xl before:right-0 flex mt-2 items-center border-indigo leading-8'>
             <p>
               هو الشخص الذي يملك خبرة واسعة في مجال الاستثمارات بشكل عام
               والأوراق المالية بشكل منتظم كما أنه ذو ملاءة مالية عالية. ولأن
@@ -36,7 +36,7 @@ const Hero = () => {
         </figure>
       </div>
       {/* ========== Hero image ======== */}
-      <div className='bg-hero mt-8 px-3 lg:pl-24 xl:pl-36 lg:h-72  rounded-3xl bg-cover bg-right flex items-center justify-end py-14 shadow-lg'>
+      <div className='bg-hero mt-16 px-3 lg:pl-24 xl:pl-36 lg:h-72  rounded-3xl bg-cover bg-right flex items-center justify-end py-14 shadow-lg'>
         <div className='text-white space-y-1 text-right  flex-col'>
           <p>المستثمر المحترف يتمتع بعدة مزايا تنافسية</p>
           <ul className='leading-7 font-bold'>
