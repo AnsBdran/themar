@@ -13,7 +13,7 @@ const AddNewProject = () => {
   const showStpper = location.pathname === '/new-project/submit';
   return (
     <>
-      <section className='mb-8'>
+      <section className='mb-8 max-w-5xl mx-auto'>
         <div className=''>
           <h1 className='text-primary-main'>المشتريات</h1>
           <Breadcrumbs />

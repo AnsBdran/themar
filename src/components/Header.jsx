@@ -24,21 +24,19 @@ const Header = () => {
             className='cursor-pointer md:hidden'
             onClick={() => setShowSidebar(true)}
           />
-          <Logo />
+          <Link to='/'>
+            <Logo />
+          </Link>
         </div>
         {/* header for large screens */}
         <div className='hidden md:flex'>
-          <Link to='/' className='hidden md:inline  basis-64'>
-            <Logo />
-          </Link>
-          <div className='flex max-w-5xl flex-1 mx-auto md:px-3 lg:px-6 xl:px-12'>
-            <Menu
-              className='cursor-pointer md:hidden'
-              onClick={() => setShowSidebar(true)}
-            />
-            <Link to='/' className='md:hidden'>
-              <Logo />
+          <div className='basis-64 '>
+            <Link to='/' className='w-max inline-block pr-8'>
+              {/* <Logo /> */}
+              <img src='/logo.png' alt='logo' className='w-24' />
             </Link>
+          </div>
+          <div className='flex max-w-5xl flex-1 mx-auto md:px-3 lg:px-6 xl:px-12'>
             <UserInfo className='hidden md:flex flex-1 ' />
             <HeaderIcons className='hidden md:flex ' />
           </div>

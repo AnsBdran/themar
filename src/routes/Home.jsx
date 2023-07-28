@@ -1,6 +1,5 @@
-import React from 'react';
 import Hero from '../components/Hero';
-import { CircularListIcon, Cloud, SVG } from '../utils/SVGs';
+import { CircularListIcon, Cloud } from '../utils/SVGs';
 
 const Home = () => {
   return (

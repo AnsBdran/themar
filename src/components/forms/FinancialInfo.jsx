@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TextField from '../TextField';
 import { DownArrow } from '../../utils/SVGs';
 import { Link } from 'react-router-dom';
@@ -38,15 +38,13 @@ const FinancialInfo = () => {
               <label className='basis-44'>هل تود رهن الأصل؟</label>
 
               <div className='flex gap-1 items-center'>
-                <div className='radio-box'>
-                  <input type='radio' id='mortgage-yes' name='mortgage' />
-                </div>
+                <input type='radio' id='mortgage-yes' name='mortgage' />
+
                 <label htmlFor='mortgage-yes'>نعم</label>
               </div>
               <div className='flex gap-1 items-center'>
-                <div className='radio-box'>
-                  <input type='radio' id='mortgage-no' name='mortgage' />
-                </div>
+                <input type='radio' id='mortgage-no' name='mortgage' />
+
                 <label htmlFor='mortgage-no'>لا</label>
               </div>
             </div>
@@ -54,15 +52,23 @@ const FinancialInfo = () => {
               <label className='basis-44 '>هل يوجد ضمانات أخرى؟</label>
 
               <div className='flex gap-1 items-center'>
-                <div className='radio-box'>
-                  <input type='radio' id='guarantee-yes' name='guarantee' />
-                </div>
+                <input
+                  type='radio'
+                  id='guarantee-yes'
+                  name='guarantee'
+                  value='نعم'
+                />
+
                 <label htmlFor='guarantee-yes'>نعم</label>
               </div>
               <div className='flex gap-1 items-center'>
-                <div className='radio-box'>
-                  <input type='radio' id='guarantee-no' name='guarantee' />
-                </div>
+                <input
+                  type='radio'
+                  id='guarantee-no'
+                  name='guarantee'
+                  value='لا'
+                />
+
                 <label htmlFor='guarantee-no'>لا</label>
               </div>
             </div>
